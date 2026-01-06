@@ -5,6 +5,7 @@ import { sql } from "@vercel/postgres"
 import { compare } from "bcrypt"
 
 const handler = nextAuth({
+    secret: process.env.NEXTAUTH_SECRET,
     session: {
         strategy: 'jwt',
     },

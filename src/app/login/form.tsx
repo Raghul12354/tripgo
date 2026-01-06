@@ -15,7 +15,6 @@ export default function Form() {
       password: formData.get("password"),
       redirect: false,
     });
-    // console.log({ response });
 
     if (!response?.error) {
       router.push("/dashboard");
@@ -23,25 +22,6 @@ export default function Form() {
     }
   };
   return (
-    // <form
-    //   onSubmit={handleSubmit}
-    //   className="flex flex-col gap-2 mx-auto max-w-md mt-10"
-    // >
-    //   <input
-    //     name="email"
-    //     className="border border-black text-black"
-    //     type="email"
-    //     placeholder="enter your email"
-    //     required
-    //   />
-    //   <input
-    //     name="password"
-    //     type="password"
-    //     placeholder="enter your password"
-    //     required
-    //   />
-    //   <button type="submit">Login</button>
-    // </form>
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
