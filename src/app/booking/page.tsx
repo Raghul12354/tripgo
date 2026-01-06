@@ -6,7 +6,6 @@ import { StartDate } from "@/components/booking/dateComp";
 import { EndDateComp } from "@/components/booking/EndDateComp";
 import { Separator } from "@/components/ui/separator";
 
-// **Pending tasks: whatsapp api,dashboard auth{on processing},
 const bookingSchema = z.object({
   Name: z
     .string()

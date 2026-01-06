@@ -1,9 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import EditBtn from "@/components/dashboard/EditBtn";
-import Link from "next/link";
 import Loading from "@/app/dashboard/loading";
-// ** good design for skeleton(need to learn how to implement) , auth add: how we work section, nav underline and animations add:Faq in booking form page and policy information also
+import { Mail, Phone, Trash2 } from "lucide-react";
 
 // format Date like 1990-12-12
 const formatDate = (dateString: any) => {
@@ -12,7 +10,7 @@ const formatDate = (dateString: any) => {
 };
 
 const getUsers = async () => {
-  const res = await fetch("http://localhost:3000/api/booking", {
+  const res = await fetch("/api/booking", {
     next: { revalidate: 0 },
   });
   const result = await res.json();
@@ -39,7 +37,7 @@ const Users = () => {
   // Delete function
   const handleDelete = async (id: string) => {
     try {
-      const response = await fetch("http://localhost:3000/api/booking", {
+      const response = await fetch("/api/booking", {
         method: "DELETE",
         body: JSON.stringify({ id }),
       });
@@ -57,76 +55,134 @@ const Users = () => {
   };
 
   return (
-    <div className="min-h-full max-w-screen">
-      {/*
-        <div className="flex justify-center">
-          <FormComponent />
-        </div> */}
-      {loading ? (
-        <table className="bg-white w-full my-20 rounded table-auto">
-          <thead>
-            <tr>
-              <th className="table_header">id</th>
-              <th className="table_header">Name</th>
-              <th className="table_header">Email</th>
-              <th className="table_header">Number</th>
-              <th className="table_header">TourName</th>
-              <th className="table_header">Transport</th>
-              <th className="table_header">No. of Adults</th>
-              <th className="table_header">No. of Children</th>
-              <th className="table_header">Start Date</th>
-              <th className="table_header">End Date</th>
-              <th className="table_header">Message</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((items) => {
-              const {
-                id,
-                name,
-                email,
-                phonenumber,
-                tourname,
-                transport,
-                adults,
-                children,
-                startdate,
-                enddate,
-                splmessage,
-              } = items;
-              return (
-                <tr
-                  key={id}
-                  className="text-center hover:scale-100 transition-all duration-300 hover:shadow-2xl h-16 min-h-20 "
-                >
-                  <td className="table_data">{id}</td>
-                  <td className="table_data">{name}</td>
-                  <td className="table_data">
-                    <Link href={`mailto:${email}`}>{email}</Link>
-                  </td>
-                  <td className="table_data">
-                    <Link href={`tel:${phonenumber}`}>{phonenumber}</Link>
-                  </td>
-                  <td className="table_data">{tourname}</td>
-                  <td className="table_data">{transport}</td>
-                  <td className="table_data">{adults}</td>
-                  <td className="table_data">{children}</td>
-                  <td className="table_data">{formatDate(startdate)}</td>
-                  <td className="table_data">{formatDate(enddate)}</td>
-                  <td className="table_data">{splmessage}</td>
-                  <td className="px-4 py-2">
-                    <button className="cursor-pointer">
-                      <EditBtn onDelete={() => handleDelete(id)} />
-                    </button>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      ) : (
-        <Loading />
-      )}
+    <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6">
+        Booking Requests
+      </h2>
+
+      <div className="overflow-x-auto">
+        {loading ? (
+          <table className="w-full">
+            <thead>
+              <tr className="border-b-2 border-gray-200">
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  ID
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Name
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Email
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Phone
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Tour
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Transport
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Adults
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Children
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Start Date
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  End Date
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Message
+                </th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map((items) => {
+                const {
+                  id,
+                  name,
+                  email,
+                  phonenumber,
+                  tourname,
+                  transport,
+                  adults,
+                  children,
+                  startdate,
+                  enddate,
+                  splmessage,
+                } = items;
+                return (
+                  <tr
+                    key={id}
+                    className="border-b border-gray-100 hover:bg-gray-50"
+                  >
+                    <td className="py-4 px-4 text-sm text-gray-600">{id}</td>
+                    <td className="py-4 px-4 text-sm text-gray-900 font-medium">
+                      {name}
+                    </td>
+                    <td className="py-4 px-4">
+                      <a
+                        href={`mailto:${email}`}
+                        className="text-sm text-blue-600 hover:underline flex items-center gap-1"
+                      >
+                        <Mail className="w-3 h-3" />
+                        {email}
+                      </a>
+                    </td>
+                    <td className="py-4 px-4">
+                      <a
+                        href={`tel:${phonenumber}`}
+                        className="text-sm text-green-600 hover:underline flex items-center gap-1"
+                      >
+                        <Phone className="w-3 h-3" />
+                        {phonenumber}
+                      </a>
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {tourname}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {transport}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {adults}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {children}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {formatDate(startdate)}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-900">
+                      {formatDate(enddate)}
+                    </td>
+                    <td className="py-4 px-4 text-sm text-gray-600 max-w-xs truncate">
+                      {splmessage}
+                    </td>
+                    <td className="py-4 px-4">
+                      <button
+                        onClick={() => handleDelete(id)}
+                        className="text-red-500 hover:text-red-700 p-2 hover:bg-red-50 rounded transition"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        ) : (
+          <Loading />
+        )}
+      </div>
     </div>
   );
 };

@@ -13,8 +13,8 @@ const DashboardPage = async () => {
     redirect("/login");
   }
   return (
-    <div className="px-6 md:px-20">
-      <div className="flex justify-end mt-10">
+    <div className="px-6 md:px-20 pb-20">
+      <div className="flex justify-end my-10">
       {!!session && <Logout />}
       </div>
         <Users />

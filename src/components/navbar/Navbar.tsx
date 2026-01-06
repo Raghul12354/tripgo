@@ -42,7 +42,7 @@ const Navbar = () => {
         <LinkComp linkProp="/#services" linkName="services" />
         <LinkComp linkProp="/about" linkName="about" />
         <LinkComp linkProp="/destinations" linkName="destinations" />
-        {/* <LinkComp linkProp="/dashboard" linkName="dashboard" /> */}
+        <LinkComp linkProp="/dashboard" linkName="dashboard" />
       </nav>
       {/* btn */}
       <Button

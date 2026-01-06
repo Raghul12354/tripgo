@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const GET = async (req: Request, res: Response) => {
     try {
-        const result = await sql.query("SELECT * FROM users");
+        const result = await await sql`SELECT * FROM users`
         const data = result.rows;
         // console.log(data);
         return NextResponse.json({ message: "vercel pg data is fetched", data }, { status: 200 });

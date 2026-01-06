@@ -45,6 +45,9 @@ export function Mobile_Nav() {
           <button onClick={() => setOpen(false)}>
             <LinkComp linkProp="/destinations" linkName="destinations" />
           </button>
+            <button onClick={() => setOpen(false)}>
+            <LinkComp linkProp="/dashboard" linkName="dashboard" />
+          </button>
           <button onClick={() => setOpen(false)}>
             <Button
               linkProp="/booking"
