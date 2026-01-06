@@ -13,19 +13,19 @@ const data: Testimonials[] = [
     id: 1,
     img: "/testimonials/test_1.jpg",
     userName: "Jessica M., New York, USA",
-    para: "I had an unforgettable experience with Viji Tours and Travels! The tour guides were incredibly knowledgeable and friendly, making our trip both educational and fun. The accommodations were top-notch, and every detail was taken care of, allowing us to relax and enjoy our vacation fully. Highly recommend to anyone looking for a seamless travel experience!",
+    para: "I had an unforgettable experience with Tripgo! The tour guides were incredibly knowledgeable and friendly, making our trip both educational and fun. The accommodations were top-notch, and every detail was taken care of, allowing us to relax and enjoy our vacation fully. Highly recommend to anyone looking for a seamless travel experience!",
   },
   {
     id: 2,
     img: "/testimonials/test_2.jpg",
     userName: "Rajesh K., Mumbai, India",
-    para: "Our family vacation to Europe was beyond our expectations, thanks to Viji Tours and Travels. From the moment we booked, everything was handled professionally. The itinerary was perfectly planned, giving us a great mix of sightseeing and relaxation. We created memories that will last a lifetime. Can't wait to book our next adventure with them!",
+    para: "Our family vacation to Europe was beyond our expectations, thanks to Tripgo. From the moment we booked, everything was handled professionally. The itinerary was perfectly planned, giving us a great mix of sightseeing and relaxation. We created memories that will last a lifetime. Can't wait to book our next adventure with them!",
   },
   {
     id: 3,
     img: "/testimonials/test_3.jpg",
     userName: "Emily P., Sydney, Australia",
-    para: "Viji Tours and Travels made our dream honeymoon come true! The exotic locations, luxurious accommodations, and personalized service were just perfect. The special touches they added to our trip made us feel like royalty. We highly recommend their services for any special occasion travel.",
+    para: "Tripgo made our dream honeymoon come true! The exotic locations, luxurious accommodations, and personalized service were just perfect. The special touches they added to our trip made us feel like royalty. We highly recommend their services for any special occasion travel.",
   },
 ];
 

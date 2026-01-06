@@ -21,7 +21,7 @@ const about = () => {
               About us
             </h6>
             <h3 className="text-3xl md:text-4xl font-semibold my-5">
-              Welcome to Viji Tours and Travels, where unforgettable travel
+              Welcome to Tripgo, where unforgettable travel
               experiences await you worldwide.
             </h3>
             <p className="text-base md:text-lg text-gray-500 ">
@@ -34,8 +34,7 @@ const about = () => {
             <p className="text-base md:text-lg text-gray-500  mt-3">
               With our passion for exploration and commitment to exceptional
               service, we strive to make every trip an unforgettable adventure.
-              Get ready to embark on the journey of a lifetime with Viji Tours
-              and Travels.
+              Get ready to embark on the journey of a lifetime with Tripgo.
             </p>
           </div>
         </div>
@@ -53,8 +52,7 @@ const about = () => {
             <p className="text-base md:text-lg text-gray-500 mt-3">
               With our passion for exploration and commitment to exceptional
               service, we strive to make every trip an unforgettable adventure.
-              Get ready to embark on the journey of a lifetime with Viji Tours
-              and Travels.
+              Get ready to embark on the journey of a lifetime with Tripgo.
             </p>
           </div>
           <Image
@@ -86,8 +84,7 @@ const about = () => {
             <p className="text-base md:text-lg text-gray-500 mt-3">
               With our passion for exploration and commitment to exceptional
               service, we strive to make every trip an unforgettable adventure.
-              Get ready to embark on the journey of a lifetime with Viji Tours
-              and Travels.
+              Get ready to embark on the journey of a lifetime with Tripgo.
             </p>
           </div>
         </div>

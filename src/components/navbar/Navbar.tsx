@@ -24,18 +24,15 @@ export const LinkComp = ({
 const Navbar = () => {
   return (
     <header className="flex justify-around items-center shadow-xl md:py-4 h-16 md:h-24 relative bg-white">
-      {/* logo (too large logo) */}
-      <Link
-        href="/"
-        className="relative md:h-[100px] h-[60px] md:w-[128px] w-[80px]"
-      >
+      <Link href="/">
         <Image
-          src="/logo/Viji tours & Travels.png"
-          alt="Viji Tours & Travels"
-          fill
+          src="/logo/Tripgo.png"
+          alt="Tripgo"
+          width={150}
+          height={80}
           priority={true}
           quality={100}
-          sizes="(min-width: 300px) 128px, (min-width: 680px) calc(32.5vw - 119px), calc(100vw - 568px)"
+          // sizes="(min-width: 300px) 128px, (min-width: 680px) calc(32.5vw - 119px), calc(100vw - 568px)"
           className="object-contain"
         />
       </Link>

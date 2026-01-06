@@ -16,25 +16,25 @@ const data = [
     id: 1,
     img: "/hero/hero_carousel-1.jpg",
     title: "Unforgettable Adventures Await",
-    desc: "Embark on handcrafted adventures with Viji Tours & Travels. From scaling peaks to azure waters, explore wonders worldwide. Start your journey today!",
+    desc: "Embark on handcrafted adventures with Tripgo. From scaling peaks to azure waters, explore wonders worldwide. Start your journey today!",
   },
   {
     id: 2,
     img: "/hero/hero_carousel-2.jpg",
     title: "Escape to Exotic Paradises",
-    desc: "Indulge in wanderlust with Viji Tours & Travels. Dive into paradise as you explore sun-drenched beaches, ancient ruins, and hidden gems. Let us be your guide to the ultimate escape!",
+    desc: "Indulge in wanderlust with Tripgo. Dive into paradise as you explore sun-drenched beaches, ancient ruins, and hidden gems. Let us be your guide to the ultimate escape!",
   },
   {
     id: 3,
     img: "/hero/hero_carousel-3.jpg",
     title: "Luxury Redefined: Opulent Escapes",
-    desc: "Experience luxury redefined with Viji Tours & Travels. From opulent accommodations to exclusive experiences, elevate your travel dreams. Discover elegance and sophistication",
+    desc: "Experience luxury redefined with Tripgo. From opulent accommodations to exclusive experiences, elevate your travel dreams. Discover elegance and sophistication",
   },
   {
     id: 4,
     img: "/hero/hero_carousel-4.jpg",
     title: "Culture & Heritage Immersion",
-    desc: "Immerse in global cultures with Viji Tours & Travels. Curated journeys reveal traditions, cuisine, and landscapes. Begin your cultural odyssey now!",
+    desc: "Immerse in global cultures with Tripgo. Curated journeys reveal traditions, cuisine, and landscapes. Begin your cultural odyssey now!",
   },
 ];
 

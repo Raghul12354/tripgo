@@ -19,23 +19,21 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-40 pt-5 md:pt-10 pb-12 md:pb-24 md:place-items-center">
         {/* first section  */}
         <div className="flex flex-col">
-            <Link
-              href="/"
-              className="relative md:h-[100px] h-[80px] md:w-[128px] w-[100px]"
-            >
-              <Image
-                src="/logo/Viji tours & Travels.png"
-                alt="Viji Tours & Travels"
-                fill
-                priority={true}
-                quality={100}
-                sizes="(min-width: 300px) 128px, (min-width: 680px) calc(32.5vw - 119px), calc(100vw - 568px)"
-                className="object-contain"
-              />
-            </Link>
-            <q className="w-1/2 md:w-[70%] font-medium md:text-lg leading-snug my-3">
-              Discover Your World, One Journey at a Time!
-            </q>
+          <Link href="/">
+            <Image
+              src="/logo/Tripgo.png"
+              alt="Tripgo"
+              width={150}
+              height={80}
+              priority={true}
+              quality={100}
+              // sizes="(min-width: 300px) 128px, (min-width: 680px) calc(32.5vw - 119px), calc(100vw - 568px)"
+              className="object-contain"
+            />
+          </Link>
+          <q className="w-1/2 md:w-[70%] font-medium md:text-lg leading-snug my-3">
+            Discover Your World, One Journey at a Time!
+          </q>
           {/* social icons */}
           <div className="mt-5">
             <p className="text-lg font-medium capitalize ">follow us</p>
@@ -76,10 +74,10 @@ const Footer = () => {
           </Link>
           <Link
             className="flex items-center gap-2 "
-            href="mailto: vijitours&travels@gmail.com"
+            href="mailto: tripgo@gmail.com"
           >
             <EmailIcon classnameProp="w-6 h-6" />
-            <p className="text-sm md:text-base">vijitours&travels@gmail.com</p>
+            <p className="text-sm md:text-base">tripgo@gmail.com</p>
           </Link>
           <p className="flex items-center gap-2">
             <ClockIcon classnameProp="w-6 h-6" />
@@ -89,7 +87,7 @@ const Footer = () => {
       </div>
       {/* copyrights */}
       <p className="text-xs md:text-base font-medium text-center pb-2">
-        Copyright &copy; 2024 by Viji Tours & Travels. All Rights Reserved.
+        Copyright &copy; 2026 by Tripgo. All Rights Reserved.
       </p>
     </footer>
   );

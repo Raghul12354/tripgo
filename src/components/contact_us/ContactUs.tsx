@@ -41,10 +41,10 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 gap-10">
           <Link
             className="flex items-center gap-2"
-            href="mailto: vijitours&travels@gmail.com"
+            href="mailto: tripgo@gmail.com"
           >
             <EmailIcon classnameProp="w-6 h-6" />
-            <p className="text-sm md:text-lg">vijitours&travels@gmail.com</p>
+            <p className="text-sm md:text-lg">tripgo@gmail.com</p>
           </Link>
           <Link className="flex items-center gap-2" href="tel: +1234567890">
             <PhoneIcon classnameProp="w-6 h-6" />

@@ -7,9 +7,9 @@ import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Viji Tours & Travels",
+  title: "Tripgo",
   description:
-    "Explore exciting travel destinations with Viji Tours & Travels. Plan your perfect trip with our expert travel services.",
+    "Explore exciting travel destinations with Tripgo. Plan your perfect trip with our expert travel services.",
 };
 
 export default function RootLayout({
