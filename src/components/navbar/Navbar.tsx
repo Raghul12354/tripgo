@@ -39,7 +39,7 @@ const Navbar = () => {
       {/* nav-links */}
       <nav className="hidden md:flex items-center bg-inherit text-black w-fit z-20 gap-5 md:gap-10">
         <LinkComp linkProp="/" linkName="home" />
-        <LinkComp linkProp="/#services" linkName="services" />
+        {/* <LinkComp linkProp="/#services" linkName="services" /> */}
         <LinkComp linkProp="/about" linkName="about" />
         <LinkComp linkProp="/destinations" linkName="destinations" />
         <LinkComp linkProp="/dashboard" linkName="dashboard" />

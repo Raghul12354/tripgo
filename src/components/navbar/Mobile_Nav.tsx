@@ -36,9 +36,9 @@ export function Mobile_Nav() {
           <button onClick={() => setOpen(false)}>
             <LinkComp linkProp="/" linkName="home" />
           </button>
-          <button onClick={() => setOpen(false)}>
+          {/* <button onClick={() => setOpen(false)}>
           <LinkComp linkProp="/#services" linkName="services" />
-          </button>
+          </button> */}
           <button onClick={() => setOpen(false)}>
             <LinkComp linkProp="/about" linkName="about" />
           </button>

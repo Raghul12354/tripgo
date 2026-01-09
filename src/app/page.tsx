@@ -9,14 +9,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <PopularTours />
       <WhyChooseUs />
-      {/* #contact page for travels
-      #pending:
-      whatsapp api , 
-      email link
-       */}
       <Testimonials />
       <ContactUs />
     </main>
