@@ -1,24 +1,28 @@
-# Tripgo 🌍
+# TripGo 🌍
 
-Tripgo is a personal travel and tour website project built to practice modern web development and showcase a clean, responsive UI for exploring travel destinations and tour packages.
+TripGo is a personal tour website developed to explore modern web development practices, with a focus on dynamic routing, data handling, and a responsive UI for displaying travel destinations and tour packages.
 
 ## 🚀 Live Demo
-🔗 https://tripgo.vercel.app
+
+🔗 https://tripgo-raghul12354s-projects.vercel.app/
 
 ## 🛠️ Tech Stack
+
 - Frontend: TypeScript, Next.js
 - Styling: Tailwind CSS, ShadCN UI
 - Backend: Postgresql(Vercel)
 - Deployment: Vercel
 
 ## ✨ Features
-- Browse travel destinations
-- View tour packages and details
-- Responsive design for mobile and desktop
-- Fast performance with modern frontend tools
-- Clean and minimal UI
+
+- Displays tour destinations using dynamic pages
+- Login system with a protected dashboard
+- Dashboard to view form submissions stored in the database
+- Option to add and manage tour content from the dashboard
+- Responsive design for mobile and desktop and minimal UI
 
 ### Installation
+
 - git clone this repo
 - cd tripgo
 - npm install
